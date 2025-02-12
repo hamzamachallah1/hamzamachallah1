@@ -1,16 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Website</title>
-  <style>
-    body { font-family: Arial, sans-serif; }
-    .container { max-width: 800px; margin: 0 auto; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moroccan Honey Shop</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Welcome to My Website</h1>
-    <p>Created with Kali Linux!</p>
-  </div>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Moroccan Honey Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Welcome to Moroccan Honey Shop</h1>
+        <p>Discover the finest Moroccan honey, sourced directly from local beekeepers.</p>
+    </section>
+
+    <section id="products">
+        <h2>Our Products</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="images/honey1.jpg" alt="Moroccan Honey 1">
+                <h3>Wildflower Honey</h3>
+                <p>$15.00</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="images/honey2.jpg" alt="Moroccan Honey 2">
+                <h3>Argan Honey</h3>
+                <p>$20.00</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are passionate about bringing you the best Moroccan honey, straight from the heart of Morocco.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Moroccan Honey Shop. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
